@@ -6,7 +6,7 @@
     },
     "builds": [
         {
-            "src": "{{Source for distribution}}",
+            "src": ".",
             "use": "@vercel/static"
         }
     ]
