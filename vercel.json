@@ -1,11 +1,12 @@
 {
-  "rewrites": [
+  "headers": [
     {
-      "source": "/(.*)",
-      "destination": "/$1",
+      "source": "(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600" },
-        { "key": "Expires", "value": "Sat, 01 Jan 2023 00:00:00 GMT" }
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=86400, max-age=86400"
+        }
       ]
     }
   ]
